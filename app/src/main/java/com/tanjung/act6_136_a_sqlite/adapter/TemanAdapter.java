@@ -1,6 +1,8 @@
 package com.tanjung.act6_136_a_sqlite.adapter;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tanjung.act6_136_a_sqlite.R;
+import com.tanjung.act6_136_a_sqlite.TemanBaru;
 import com.tanjung.act6_136_a_sqlite.database.Teman;
 
 import java.util.ArrayList;
@@ -61,6 +64,13 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
                 cardku.setOnLongClickListener(new View.OnLongClickListener(){
                     @Override
                     public boolean onLongClick(View v){
+                        switch(v.getId())
+                        {
+                            case R.id.edit:
+                                break;
+                            case R.id.delete:
+                                break;
+                        }
                         return true;
                     }
                 });

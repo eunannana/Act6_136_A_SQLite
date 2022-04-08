@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void BacaData(){
-        ArrayList<HashMap<String,String>> daftarTeman = controller.getAallTeman();
+        ArrayList<HashMap<String,String>> daftarTeman = controller.getAllTeman();
         temanArrayList = new ArrayList<>();
         //memindah dari hasil query kedalam teman
         for (int i=0; i<daftarTeman.size(); i++){

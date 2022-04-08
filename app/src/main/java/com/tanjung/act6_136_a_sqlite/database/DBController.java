@@ -36,7 +36,7 @@ public class DBController extends SQLiteOpenHelper {
         basisdata.close();
     }
 
-    public ArrayList<HashMap<String, String>> getAallTeman(){
+    public ArrayList<HashMap<String, String>> getAllTeman(){
         ArrayList<HashMap<String, String>> daftarTeman;
         daftarTeman = new ArrayList<HashMap<String, String>>();
         String selectQuery = "Select * from teman";
